@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def generate_pet_name(animat_type, pet_color):
+def generate_pet_name(animal_type, pet_color):
     llm = OpenAI(temperature=0.5)  # temp is for creativity, 1 is best creativity
 
     prompt_template_name = PromptTemplate(
@@ -21,7 +21,7 @@ def generate_pet_name(animat_type, pet_color):
         llm=llm, prompt=prompt_template_name, output_key="pet_name"
     )  # output_keyis for calling from streamlit. look yz_streamlit.py
 
-    response = name_chain({"animal_type": animat_type, "pet_color": pet_color})
+    response = name_chain({"animal_type": animal_type, "pet_color": pet_color})
 
     return response
 
