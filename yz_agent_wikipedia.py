@@ -6,7 +6,8 @@
 # pip3 install wikipedia
 # pip3 install numexpr  (for math calculation in the question)
 
-from langchain.llms import OpenAI
+# from langchain.llms import OpenAI
+from langchain_openai import OpenAI
 
 # agent libs
 from langchain.agents import load_tools

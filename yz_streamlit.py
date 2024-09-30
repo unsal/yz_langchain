@@ -1,3 +1,6 @@
+
+# pip3 install streamlit 
+
 import yz_prompt_template as pt
 import streamlit as st  # use on Terminal as: streamlit run yz_streamlit.py
 
