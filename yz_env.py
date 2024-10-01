@@ -3,7 +3,7 @@
 from langchain.llms import OpenAI
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv()  # this line loads OPENAI_API_KEY env-value from .env file automatically
 
 
 def generate_pet_name():
